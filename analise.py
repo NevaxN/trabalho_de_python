@@ -12,7 +12,7 @@ import funcoes as fct
 df = fct.ler_arquivo()
 
 # Isso solicita ao usuário que digite o nome de um personagem desejado e armazena a entrada na variável personagem_desejado.
-personagem_desejado = fct.nome_input(input("Digite o nome do personagem que deseja pesquisar: "))
+personagem_desejado = input("Digite o nome do personagem que deseja pesquisar: ")
 # Isso cria um novo DataFrame personagem_filtrado que contém apenas as linhas onde a coluna 'Nome/Herói' é igual ao nome do personagem desejado.
 personagem_filtrado = df[df['Nome/Herói'] == personagem_desejado]
 
